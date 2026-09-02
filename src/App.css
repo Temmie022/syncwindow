@@ -1,0 +1,277 @@
+.page {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.hero h1 {
+  margin: 0.15rem 0 0.6rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: -0.04em;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.lede {
+  margin: 0;
+  max-width: 40rem;
+  color: var(--muted);
+}
+
+main {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1.25rem 1.25rem 1.5rem;
+}
+
+.panel-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: end;
+  justify-content: space-between;
+}
+
+h2,
+h3 {
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.hint,
+.timeline-caption,
+footer p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.date-field {
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.member-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.member-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.member-title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: baseline;
+}
+
+.zone {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.hours {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  align-items: end;
+}
+
+.hours label,
+.add-grid label,
+.date-field label {
+  display: grid;
+  gap: 0.2rem;
+  font-size: 0.85rem;
+}
+
+input[type='date'],
+input[type='time'],
+input[type='text'] {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.4rem 0.55rem;
+  background: #fff;
+  min-width: 8rem;
+}
+
+.add-form {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--line);
+}
+
+.add-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+button[type='submit'] {
+  background: var(--accent);
+  color: var(--accent-ink);
+  border: 0;
+  border-radius: 8px;
+  padding: 0.55rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button[type='submit']:hover {
+  filter: brightness(1.08);
+}
+
+.linkish {
+  background: none;
+  border: 0;
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0.4rem 0;
+}
+
+.error {
+  color: #9f1239;
+  margin: 0 0 0.75rem;
+}
+
+.live {
+  margin-top: 0.5rem;
+}
+
+.duration {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.25rem 0;
+}
+
+.badge {
+  display: inline-block;
+  background: var(--shared);
+  color: #fff;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.45rem;
+  border-radius: 999px;
+}
+
+.utc-line {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+}
+
+.local-times {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.local-times li {
+  display: grid;
+  grid-template-columns: 8.5rem 7rem 1fr;
+  gap: 0.5rem;
+  align-items: baseline;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.35rem;
+}
+
+.local-times .range {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.timeline {
+  margin-top: 1.25rem;
+}
+
+.track {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 0.6rem;
+  align-items: center;
+  margin-bottom: 0.45rem;
+}
+
+.track-label {
+  font-size: 0.85rem;
+}
+
+.track-bar {
+  position: relative;
+  height: 1.15rem;
+  background: #ece8e1;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.track-bar .work,
+.track-bar .shared {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.track-bar .work {
+  background: color-mix(in srgb, var(--work) 45%, white);
+}
+
+.track-bar .shared {
+  background: var(--shared);
+}
+
+.ticks {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.35rem 0 0 8.1rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+@media (max-width: 640px) {
+  .local-times li {
+    grid-template-columns: 1fr;
+  }
+
+  .track {
+    grid-template-columns: 1fr;
+  }
+
+  .ticks {
+    margin-left: 0;
+  }
+}
